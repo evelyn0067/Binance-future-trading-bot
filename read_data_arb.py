@@ -32,7 +32,7 @@ def crypto_kline_SQL_updater(symbol,start):
     print(str(len(new_rows[:-1])) + 'new rows imported to DB' + '' + symbol)
 
 client = Client()
-engine = sqlalchemy.create_engine('sqlite:///crypto0316_db.db')
+engine = sqlalchemy.create_engine('sqlite:///crypto_db.db')
 
 begain_date = '2023-3-27'
 
